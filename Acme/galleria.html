@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/5046d35d57.js" crossorigin="anonymous"></script>
+  
+<title>Deni</title>
+
+
+
+
+<style>
+
+header{
+    align-items: center;
+    text-align: center;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+
+  font-weight: bold;
+}
+
+header a:hover{
+  color:#cccccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(197, 188, 188);
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+    
+    <header>
+       
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                </ul>
+            </nav>
+
+            
+<a href="https://discord.gg/v5qRCkRj"><i class="fab fa-discord" style="font-size: 35px;color: aqua;"></i></a>  
+<a href="https://twitter.com/nft_deni/status/1472213335227736064?s=24">
+  <i class="fa fa-twitter" style="font-size: 35px;color: blueviolet;"></i></a>
+<a href="https://instagram.com/deni_nft?utm_medium=copy_link"> 
+  <i class="fa fa-instagram" style="font-size: 35px;color: azure;"></i></a>
+ 
+    
+
+        </div>
+        </header>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+
+<h2>Gallery</h2>
+
+<div id="myBtnContainer">
+    <strong>
+  <button class="btn active" onclick="filterSelection('all')"><h3>Show all</h3></button>
+  <button class="btn" onclick="filterSelection('nature')"> <h3>Lazy Ape</h3></button>
+  <button class="btn" onclick="filterSelection('cars')"> <h3> Deni NFT </h3></button>
+  <button class="btn" onclick="filterSelection('people')"> <h3> Poker cards NFT</h3></button>
+    </strong>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+      <img src="images/ape.png" alt="Mountains" style="width:100%">
+      </a>
+      <h4>#0</h4>
+     
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ape.png" alt="Lights" style="width:100%">
+    </a>
+      <h4>#1</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ape.png" alt="Nature" style="width:100%">
+    </a>
+      <h4>#2</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column nature">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ape.png" alt="Nature" style="width:100%">
+    </a>
+      <h4>#3</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column nature">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ape.png" alt="Nature" style="width:100%">
+    </a>
+      <h4>#4</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column nature">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ape.png" alt="Nature" style="width:100%">
+    </a>
+      <h4>#5</h4>
+      <p></p>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+<!--Cards-->
+
+
+  <div class="column cars">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+      <img src="images/ap.jpg" alt="Car" style="width:100%">
+      </a>
+      <h4>#0</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ap.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#1</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ap.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#2</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ap.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#3</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ap.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#4</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/ap.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#5</h4>
+      <p></p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- people-->
+
+  <div class="column people">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+      <img src="images/poker.jpg" alt="Car" style="width:100%">
+      </a>
+      <h4>#0</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/poker.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#1</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/poker.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#2</h4>
+      <p></p>
+    </div>
+  </div>
+
+
+  <div class="column people">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/poker.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#3</h4>
+      <p></p>
+    </div>
+  </div>
+
+
+  <div class="column people">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/poker.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#4</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <a target="_blank" href="https://opensea.io/assets/0x1d20a51f088492a0f1c57f047a9e30c9ab5c07ea/4347s">
+    <img src="images/poker.jpg" alt="Car" style="width:100%">
+    </a>
+      <h4>#5</h4>
+      <p></p>
+    </div>
+  </div>
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
